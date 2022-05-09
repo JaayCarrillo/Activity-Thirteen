@@ -1,0 +1,141 @@
+Joseph Carrillo 
+CST-150 C# I 
+Activity Thirteen
+05/08/22
+
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace TicTacToeFinished
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        public bool isXWin { get; private set; }
+        public bool isOWin { get; private set; }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            //Declared 2 dimentional array
+            int?[,] gameArray = new int?[3, 3];
+
+            //Boolean variablesholding X win or O Win
+            bool isXWin = false; ;
+            bool isOWin = false;
+
+            //Random value generator
+            Random r = new Random();
+
+
+            //Assign random value to 2 dimentional array 
+            gameArray[0, 0] = r.Next(0, 2);
+            gameArray[0, 1] = r.Next(0, 2);
+            gameArray[0, 2] = r.Next(0, 2);
+            gameArray[1, 0] = r.Next(0, 2);
+            gameArray[1, 1] = r.Next(0, 2);
+            gameArray[1, 2] = r.Next(0, 2);
+            gameArray[2, 0] = r.Next(0, 2);
+            gameArray[2, 1] = r.Next(0, 2);
+            gameArray[2, 2] = r.Next(0, 2);
+
+            ////
+            ///
+
+            //The if and else if condition to check who wins
+            if (gameArray[0, 0] == gameArray[0, 1] && gameArray[0, 1] == gameArray[0, 2])
+            {
+                isXWin = gameArray[0, 0] == 1;
+                isOWin = gameArray[0, 0] == 0;
+            }
+            else if (gameArray[1, 0] == gameArray[1, 1] && gameArray[1, 1] == gameArray[1, 2])
+            {
+                isXWin = gameArray[1, 0] == 1;
+                isOWin = gameArray[1, 0] == 0;
+            }
+            else if (gameArray[2, 1] == gameArray[2, 1] && gameArray[2, 1] == gameArray[2, 2])
+            {
+                isXWin = gameArray[2, 1] == 1;
+                isOWin = gameArray[2, 1] == 0;
+            }
+            else if (gameArray[0, 0] == gameArray[1, 0] && gameArray[1, 0] == gameArray[2, 0])
+            {
+                isXWin = gameArray[0, 0] == 1;
+                isOWin = gameArray[0, 0] == 0;
+            }
+            else if (gameArray[0, 1] == gameArray[1, 1] && gameArray[1, 1] == gameArray[2, 1])
+            {
+                isXWin = gameArray[0, 1] == 1;
+                isOWin = gameArray[0, 1] == 0;
+            }
+            else if (gameArray[0, 2] == gameArray[1, 2] && gameArray[1, 2] == gameArray[2, 2])
+            {
+                isXWin = gameArray[0, 2] == 1;
+                isOWin = gameArray[0, 2] == 0;
+            }
+            else if (gameArray[0, 0] == gameArray[1, 1] && gameArray[1, 1] == gameArray[2, 2])
+            {
+                isXWin = gameArray[0, 0] == 1;
+                isOWin = gameArray[0, 0] == 0;
+            }
+            else if (gameArray[0, 2] == gameArray[1, 1] && gameArray[1, 1] == gameArray[2, 0])
+            {
+                isXWin = gameArray[0, 2] == 1;
+                isOWin = gameArray[0, 2] == 0;
+            }
+
+
+            /////
+            ///
+
+
+            //Assign the 2 dimentional value to nine labels
+            
+            lbl1.Text = gameArray[0, 0] == 1 ? "X" : "O";
+            lbl2.Text = gameArray[0, 1] == 1 ? "X" : "O";
+            lbl3.Text = gameArray[0, 2] == 1 ? "X" : "O";
+            lbl4.Text = gameArray[1, 0] == 1 ? "X" : "O";
+            lbl5.Text = gameArray[1, 1] == 1 ? "X" : "O";
+            lbl6.Text = gameArray[1, 2] == 1 ? "X" : "O";
+            lbl7.Text = gameArray[2, 0] == 1 ? "X" : "O";
+            lbl8.Text = gameArray[2, 1] == 1 ? "X" : "O";
+            lbl9.Text = gameArray[2, 2] == 1 ? "X" : "O";
+
+
+            //If X Wins show as X Wins in textbox (
+            if (isXWin)
+            {
+                txtResult.Text = "X Wins!";
+            }
+            //If O Wins show as O Wins in textbox 
+            else if (isOWin)
+            {
+                txtResult.Text = "O Wins!";
+            }
+            //If no one wins then show as Game Draw in textbox (readonly)
+            else
+            {
+                txtResult.Text = "Game Draw!";
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            // close application 
+            this.Close();
+        }
+    }
+}

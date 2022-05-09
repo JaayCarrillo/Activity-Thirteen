@@ -1,0 +1,249 @@
+Joseph Carrillo 
+CST-150 C# I 
+Activity Thirteen
+05/08/22
+
+
+
+namespace TicTacToeFinished
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl3 = new System.Windows.Forms.Label();
+            this.lbl4 = new System.Windows.Forms.Label();
+            this.lbl5 = new System.Windows.Forms.Label();
+            this.lbl6 = new System.Windows.Forms.Label();
+            this.lbl7 = new System.Windows.Forms.Label();
+            this.lbl8 = new System.Windows.Forms.Label();
+            this.lbl9 = new System.Windows.Forms.Label();
+            this.btnNew = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.txtResult = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // lbl1
+            // 
+            this.lbl1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl1.Location = new System.Drawing.Point(43, 71);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(60, 60);
+            this.lbl1.TabIndex = 0;
+            this.lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl2
+            // 
+            this.lbl2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl2.Location = new System.Drawing.Point(109, 71);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(60, 60);
+            this.lbl2.TabIndex = 1;
+            this.lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl3
+            // 
+            this.lbl3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl3.Location = new System.Drawing.Point(175, 71);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(60, 60);
+            this.lbl3.TabIndex = 2;
+            this.lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl4
+            // 
+            this.lbl4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl4.Location = new System.Drawing.Point(43, 139);
+            this.lbl4.Name = "lbl4";
+            this.lbl4.Size = new System.Drawing.Size(60, 60);
+            this.lbl4.TabIndex = 3;
+            this.lbl4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl5
+            // 
+            this.lbl5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl5.Location = new System.Drawing.Point(109, 139);
+            this.lbl5.Name = "lbl5";
+            this.lbl5.Size = new System.Drawing.Size(60, 60);
+            this.lbl5.TabIndex = 4;
+            this.lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl6
+            // 
+            this.lbl6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbl6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl6.Location = new System.Drawing.Point(175, 139);
+            this.lbl6.Name = "lbl6";
+            this.lbl6.Size = new System.Drawing.Size(60, 60);
+            this.lbl6.TabIndex = 5;
+            this.lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl7
+            // 
+            this.lbl7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbl7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl7.Location = new System.Drawing.Point(43, 212);
+            this.lbl7.Name = "lbl7";
+            this.lbl7.Size = new System.Drawing.Size(60, 60);
+            this.lbl7.TabIndex = 6;
+            this.lbl7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl8
+            // 
+            this.lbl8.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbl8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl8.Location = new System.Drawing.Point(109, 212);
+            this.lbl8.Name = "lbl8";
+            this.lbl8.Size = new System.Drawing.Size(60, 60);
+            this.lbl8.TabIndex = 7;
+            this.lbl8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl9
+            // 
+            this.lbl9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbl9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl9.Location = new System.Drawing.Point(175, 212);
+            this.lbl9.Name = "lbl9";
+            this.lbl9.Size = new System.Drawing.Size(60, 60);
+            this.lbl9.TabIndex = 8;
+            this.lbl9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnNew
+            // 
+            this.btnNew.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnNew.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnNew.Location = new System.Drawing.Point(43, 332);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(107, 43);
+            this.btnNew.TabIndex = 9;
+            this.btnNew.Text = "New Game";
+            this.btnNew.UseVisualStyleBackColor = false;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Location = new System.Drawing.Point(156, 332);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(79, 45);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Exit";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // txtResult
+            // 
+            this.txtResult.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtResult.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtResult.Location = new System.Drawing.Point(43, 283);
+            this.txtResult.Multiline = true;
+            this.txtResult.Name = "txtResult";
+            this.txtResult.Size = new System.Drawing.Size(192, 43);
+            this.txtResult.TabIndex = 12;
+            this.txtResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(4, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(269, 38);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Tic-Tac-Toe Simulator";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Desktop;
+            this.ClientSize = new System.Drawing.Size(289, 389);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtResult);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnNew);
+            this.Controls.Add(this.lbl9);
+            this.Controls.Add(this.lbl8);
+            this.Controls.Add(this.lbl7);
+            this.Controls.Add(this.lbl6);
+            this.Controls.Add(this.lbl5);
+            this.Controls.Add(this.lbl4);
+            this.Controls.Add(this.lbl3);
+            this.Controls.Add(this.lbl2);
+            this.Controls.Add(this.lbl1);
+            this.Name = "Form1";
+            this.Text = "Tic Tac Toe Simulator";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label lbl1;
+        private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.Label lbl3;
+        private System.Windows.Forms.Label lbl4;
+        private System.Windows.Forms.Label lbl5;
+        private System.Windows.Forms.Label lbl6;
+        private System.Windows.Forms.Label lbl7;
+        private System.Windows.Forms.Label lbl8;
+        private System.Windows.Forms.Label lbl9;
+        private System.Windows.Forms.Button btnNew;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtResult;
+        private System.Windows.Forms.Label label1;
+    }
+}
+
